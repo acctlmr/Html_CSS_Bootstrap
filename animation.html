@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animation in CSS</title>
+    <style>
+      .div1 {
+        background-color: rgb(219, 157, 157);
+        width: 100px;
+        height: 100px;
+        animation-name: animation1;
+        animation-duration: 6s;
+      }
+
+      @keyframes animation1 {
+        from {
+          background-color: red;
+        }
+        to {
+          background-color: fuchsia;
+        }
+      }
+
+      .div2 {
+        background-color: yellow;
+        width: 100px;
+        height: 100px;
+        animation-name: animation2;
+        animation-duration: 9s;
+      }
+
+      @keyframes animation2 {
+        0% {
+          background-color: green;
+        }
+        100% {
+          background-color: red;
+        }
+      }
+
+      .div3 {
+        background-color: red;
+        width: 100px;
+        height: 100px;
+        animation-name: animation3;
+        animation-duration: 9s;
+      }
+
+      @keyframes animation3 {
+        0% {
+          background-color: red;
+        }
+        25% {
+          background-color: green;
+        }
+        40% {
+          background-color: fuchsia;
+        }
+        55% {
+          background-color: lightcoral;
+        }
+        80% {
+          background-color: rgb(93, 93, 235);
+        }
+        90% {
+          background-color: gold;
+        }
+        100% {
+          background-color: orange;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!--
+        CSS Animation which lets an element to change from one style to another.
+
+        To use this animation we must specify some keyframes for the animation. 
+
+        When we specify style inside the @keyframes rule,the animation will change from the current style to the new style.
+    -->
+
+    <h2>Animation in CSS (Example 1)</h2>
+
+    <div class="div1"></div>
+
+    <br />
+
+    <br />
+    <h2>Animation in CSS (Example 2)</h2>
+
+    <div class="div2"></div>
+
+    <br />
+    <br />
+
+    <h2>Animation in CSS (Example 3)</h2>
+
+    <div class="div3"></div>
+  </body>
+</html>
