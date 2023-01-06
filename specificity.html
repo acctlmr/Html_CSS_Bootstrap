@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS -Specificity</title>
+    <style>
+      * {
+        color: coral;
+      }
+      h2 {
+        color: rgb(255, 152, 115);
+      }
+      h2 {
+        color: green;
+      }
+      p {
+        color: blue;
+      }
+      div {
+        color: lawngreen;
+      }
+      p {
+        color: red;
+      }
+      .p1 {
+        color: magenta;
+      }
+      .d1 {
+        color: mediumblue;
+      }
+      #idp1 {
+        color: springgreen;
+      }
+      #idd1 {
+        color: #d1b6ff;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Specificity</h2>
+
+    <p class="p1" id="idp1" style="color: violet">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, quam velit
+      fugit nisi earum vitae. Debitis cumque quae laboriosam numquam quo maxime
+      reiciendis commodi delectus.
+    </p>
+
+    <div class="d1" id="idd1" style="color: royalblue">
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis velit ad
+      soluta saepe odit, ipsa repudiandae voluptate fugit sequi sed recusandae
+      laudantium possimus, perspiciatis eius? Lorem ipsum dolor, sit amet
+      consectetur adipisicing elit. Qui officiis, deleniti aliquid consectetur
+      voluptates sed asperiores velit ipsum ipsam vitae est inventore corrupti
+      expedita. Enim commodi eligendi magnam rem modi, sed perspiciatis
+      voluptatibus blanditiis delectus.
+    </div>
+
+    <h2>Lorem ipsum dolor sit.</h2>
+
+    <h1>Lorem, ipsum.</h1>
+  </body>
+</html>

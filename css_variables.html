@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Variables</title>
+    <style>
+      :root {
+        --lightblue: #647ae0;
+        --lorange: #f2be50;
+        --darkgreen: #097317;
+        --lpink: #f792ff;
+        --lred: #f56c40;
+      }
+      body {
+        background-color: var(--lorange);
+      }
+      h2 {
+        border-bottom: 3px solid red;
+      }
+
+      .container {
+        background-color: floralwhite;
+        color: var(--lightblue);
+        padding: 15px;
+      }
+      button {
+        background-color: var(--lred);
+        color: white;
+        padding: 12px;
+        border: none;
+      }
+    </style>
+  </head>
+  <body>
+    <!--
+        var() is a function which is used to insert the value of a CSS variable
+
+        Syntax:
+        var(--name)
+
+        Advantages:
+
+        a) It makes the code easier to read and more understandable.
+
+        b) It helps us to change easilt the color values.
+    -->
+
+    <div class="container">
+      <h2>Lorem, ipsum.</h2>
+
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos
+        rem saepe, laudantium iusto facilis, dolorem quos similique eos maiores,
+        velit vel suscipit inventore neque pariatur?
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima quam
+        nostrum pariatur debitis incidunt corporis nihil aspernatur deleniti
+        nobis doloribus, sapiente inventore quas fuga et!
+      </p>
+      <p>
+        <button>Yes</button>
+        <button>No</button>
+      </p>
+    </div>
+  </body>
+</html>

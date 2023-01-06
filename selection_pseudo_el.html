@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>::selection pseudo element</title>
+    <style>
+      * {
+        font-size: 25px;
+      }
+      ::selection {
+        background-color: fuchsia;
+        color: white;
+      }
+      .p1::selection {
+        background-color: red;
+        color: white;
+      }
+      .div1::selection {
+        background-color: gold;
+        color: white;
+      }
+      .h2::selection {
+        background-color: indianred;
+        color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>::selection pseudo element</h2>
+    <!--
+        This pseudo element matches the portion of an element that is selected by a user.
+    -->
+
+    <p class="p1">
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum
+      itaque, quasi tempore quam at placeat nulla tenetur natus! Iure nulla vel
+      dignissimos. Minima, repellendus iure.
+    </p>
+
+    <div class="div1">Lorem ipsum dolor sit amet.</div>
+
+    <h2 class="h2">Lorem ipsum dolor sit.</h2>
+  </body>
+</html>

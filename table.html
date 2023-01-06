@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Table using CSS</title>
+    <style>
+      table {
+        border: 2px solid green;
+        width: 100%;
+        border-collapse: collapse;
+        border-spacing: 0;
+        color: white;
+        font-size: 24px;
+      }
+      th,
+      td {
+        text-align: left;
+        padding: 12px;
+      }
+      tr:nth-child(even) {
+        background-color: rgb(224, 99, 255);
+      }
+      tr:nth-child(odd) {
+        background-color: rgb(26, 104, 23);
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Table using CSS</h2>
+
+    <table>
+      <tr>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Score</th>
+      </tr>
+
+      <tr>
+        <td>Ram</td>
+        <td>Shetty</td>
+        <td>56</td>
+      </tr>
+      <tr>
+        <td>Kiran</td>
+        <td>Kumar</td>
+        <td>46</td>
+      </tr>
+      <tr>
+        <td>Snehal</td>
+        <td>Shetty</td>
+        <td>55</td>
+      </tr>
+      <tr>
+        <td>Raj</td>
+        <td>Kumar</td>
+        <td>36</td>
+      </tr>
+      <tr>
+        <td>Chetan</td>
+        <td>S</td>
+        <td>77</td>
+      </tr>
+      <tr>
+        <td>Surajit</td>
+        <td>S</td>
+        <td>27</td>
+      </tr>
+    </table>
+  </body>
+</html>

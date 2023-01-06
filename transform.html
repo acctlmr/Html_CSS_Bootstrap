@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Transform in CSS</title>
+    <style>
+      .translate {
+        width: 300px;
+        height: 100px;
+        background-color: lightgreen;
+        border: 2px solid blue;
+        transform: translate(50px, 100px);
+        transform: translateX(50px);
+        transform: translateY(50px);
+      }
+      .rotate1 {
+        width: 300px;
+        height: 100px;
+        background-color: burlywood;
+        color: black;
+        border: 2px solid green;
+        transform: rotate(20deg);
+      }
+      .rotate2 {
+        width: 300px;
+        height: 100px;
+        background-color: burlywood;
+        color: black;
+        border: 2px solid green;
+        transform: rotate(-20deg);
+      }
+      .scale {
+        width: 200px;
+        height: 100px;
+        margin: 130px;
+        background-color: antiquewhite;
+        color: red;
+        border: 2px solid green;
+
+        transform: scaleY(6);
+        transform: scaleX(4);
+        transform: scale(2, 3);
+      }
+      .skew {
+        width: 300px;
+        height: 100px;
+        background-color: darkgoldenrod;
+        color: white;
+        border: 2px solid red;
+
+        transform: skewX(20deg);
+        transform: skewY(10deg);
+        transform: skew(20deg, 10deg);
+      }
+    </style>
+  </head>
+  <body>
+    <!--
+          Transform in CSS allow us to move,rotate,skew,and scale elements.
+      -->
+
+    <h1>translate() method</h1>
+    <div class="translate">
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus,
+      temporibus illo? Ratione vitae consequatur, pariatur beatae, sunt
+      temporibus odio a libero, vero debitis fugit dolorum.
+    </div>
+    <br />
+    <br />
+    <br />
+    <h1>rotate() method</h1>
+    <br />
+    <br />
+    <br />
+
+    <div class="rotate1">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt autem
+      delectus nobis laborum dolores. Ea!
+    </div>
+
+    <br />
+    <br />
+    <br />
+
+    <div class="rotate2">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt autem
+      delectus nobis laborum dolores. Ea!
+    </div>
+    <br />
+    <br />
+    <br />
+    <h1>scale() method</h1>
+
+    <div class="scale">
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis magni
+      necessitatibus tempore?
+    </div>
+    <br />
+    <br />
+    <br />
+    <h1>skew() method</h1>
+
+    <div class="skew">
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis magni
+      necessitatibus tempore?
+    </div>
+  </body>
+</html>

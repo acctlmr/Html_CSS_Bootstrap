@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Align Content Property (Flex Container Property - Parent)</title>
+    <style>
+      ul {
+        background-color: dodgerblue;
+        padding: 20px;
+        height: 600px;
+        display: flex;
+        flex-wrap: wrap;
+
+        /* Align-Content 
+        The align-content property is used to align the flex items and use flex-wrap and if there more number of flex items then its very better to use this property.
+        Height is also required to use in the flex-container if you use align-content property.
+        */
+        /* Stretch is by default */
+        /*align-content: stretch;*/
+
+        /*Align Content - Flex Start*/
+        align-content: flex-start;
+
+        /*Align-Content - Flex End */
+        align-content: flex-end;
+
+        /*Align-Content - Space-Between */
+        align-content: space-between;
+
+        /*Align-Content - space-around */
+        align-content: space-around;
+
+        /*Align-Content - space-evenly */
+        align-content: space-evenly;
+
+        /*Align-Content - center */
+        align-content: center;
+      }
+      li {
+        list-style: none;
+        background-color: coral;
+        color: white;
+        padding: 10px;
+        margin: 20px;
+        width: 100px;
+        font-size: 20px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <ul>
+      <li>1st Child</li>
+      <li>2nd Child</li>
+      <li>3rd Child</li>
+      <li>4th Child</li>
+      <li>5th Child</li>
+      <li>6</li>
+      <li>7</li>
+      <li>8</li>
+      <li>9</li>
+      <li>10</li>
+      <li>11</li>
+      <li>12</li>
+      <li>13</li>
+      <li>14</li>
+      <li>15</li>
+    </ul>
+  </body>
+</html>

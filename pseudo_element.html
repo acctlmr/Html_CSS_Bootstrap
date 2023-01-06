@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pseudo element</title>
+    <style>
+      .p1::first-line {
+        color: blue;
+        font-size: 25px;
+      }
+      .p2::first-letter {
+        color: red;
+        font-size: 51px;
+      }
+      .p3::first-letter {
+        color: rgb(136, 255, 0);
+        font-size: 81px;
+      }
+      .p3::first-line {
+        color: rgb(109, 112, 248);
+        font-size: 51px;
+      }
+    </style>
+  </head>
+  <body>
+    <!--
+        Pseudo element is used to style specified parts of an element.
+        If you want to style the first line, or first letter or inserting before or after the content etc.
+
+        Syntax:
+
+        selector::pseudo-element{
+            property:value
+        }
+    -->
+
+    <p class="p1">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod sint
+      quibusdam totam perspiciatis. Ipsa molestiae fugit aliquid, doloremque sed
+      vero id sapiente, dolorum quos illo voluptatibus perspiciatis, natus
+      quisquam nam! Eaque qui, quam quia aspernatur culpa totam inventore minima
+      facere recusandae laudantium sit similique veniam.
+    </p>
+    <br />
+    <br />
+    <p class="p2">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti quis
+      blanditiis accusamus nostrum nam ducimus odit, incidunt est placeat
+      impedit. Voluptas natus quidem rerum. Consequatur neque, facere rerum
+      labore expedita quisquam minima error amet voluptates nesciunt enim
+      corporis veniam dignissimos suscipit illo delectus possimus aliquam quam
+      repellendus temporibus quasi aut tempora hic officia. Cumque, ex!
+    </p>
+
+    <br />
+    <br />
+    <p class="p3">
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit consectetur
+      itaque debitis possimus vitae quod labore laudantium quidem quasi autem ea
+      quae quaerat recusandae id, molestiae unde eligendi. Odio, veritatis vero
+      tenetur assumenda quia cumque repudiandae minima recusandae aliquam.
+      Ratione delectus nulla possimus tempore optio qui vel recusandae quo earum
+      obcaecati veniam in quisquam, eos dolore consectetur? Aspernatur veritatis
+      eaque ratione facere neque quis doloribus ullam sapiente sint consequatur
+      quisquam, incidunt quod eligendi distinctio itaque mollitia asperiores
+      dolorem!
+    </p>
+  </body>
+</html>

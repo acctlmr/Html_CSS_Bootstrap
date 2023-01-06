@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Transition Example 2</title>
+    <style>
+      /*
+      img{
+        margin: 45px;
+        width: 15rem;
+        transition: all 12s ease-in-out;
+      }
+      img:hover {
+        border: rgb(255, 120, 203) 0.3rem solid;
+        transform: translateY(2rem);
+        transform: scale(1.5, 1.5);
+        transform: rotate(7200deg);
+      }*/
+
+      body {
+        background-color: violet;
+      }
+
+      img {
+        margin: 45px;
+        width: 15rem;
+        transition: opacity 2s ease 3s;
+      }
+
+      img:hover {
+        opacity: 0.5;
+      }
+    </style>
+  </head>
+  <body>
+    <img src="burger.jpg" />
+  </body>
+</html>

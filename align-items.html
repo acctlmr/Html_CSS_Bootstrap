@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Align-items Property ( Flex Container property => Parent)</title>
+
+    <style>
+      ul {
+        background-color: dodgerblue;
+        padding: 20px;
+        height: 300px;
+        display: flex;
+        /* ALign Items =>Default Direction =>Row => Cross Axis => Vertical
+        
+        The align-items property is sued to align the flex items.By default it is working in cross axis*/
+        /*Stretch By Default */
+        align-items: stretch;
+
+        /* Flex Start */
+        align-items: flex-start;
+
+        /* Flex End */
+        align-items: flex-end;
+
+        /* Center */
+        align-items: center;
+
+        /*baseline
+        The baseline value aligns the flex items as their baseline aligns, here all the items gets aligned by the text baseline.
+        */
+        align-items: baseline;
+      }
+      li {
+        list-style: none;
+        background-color: coral;
+        color: white;
+        padding: 10px;
+        margin: 20px;
+        width: 100px;
+        font-size: 20px;
+        text-align: center;
+        /* align-items for baseline to be visualized */
+        padding-top: 20px;
+        /* align-items for baseline to be visualized */
+        padding-bottom: 20px;
+      }
+
+      /* align-items for baseline to be visualized */
+      li:first-child {
+        padding: 5px;
+      }
+      li:nth-child(4) {
+        padding: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <ul>
+      <li>1st Child</li>
+      <li>2nd Child</li>
+      <li>3rd Child</li>
+      <li>4th Child</li>
+      <li>5th Child</li>
+    </ul>
+  </body>
+</html>

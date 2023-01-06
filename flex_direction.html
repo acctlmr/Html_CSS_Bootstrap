@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flex direction (Flex Container Property - Parent)</title>
+    <style>
+      /* FLex Container - Parent */
+      ul {
+        background-color: dodgerblue;
+        padding: 20px;
+
+        /* Flex Container Properties */
+        display: flex;
+
+        /* Flex-Direction*/
+        /* The flex-direction property defines in which direction the container eants to stack the flex items */
+        /* By default is row direction*/
+        /* The row value stacks the flex items horizontally from left to right */
+        flex-direction: row;
+
+        /* Row reverse */
+        /* The row-reverse value stacks the flex items horizontally from right to left */
+        flex-direction: row-reverse;
+
+        /* Column */
+        /* The column value stacks the flex items verticallyy from top to bottom */
+        flex-direction: column;
+
+        /* Column Reverse*/
+        /* The colimn-reverse value stacks the flex items vertically from bottom to top */
+        flex-direction: column-reverse;
+      }
+
+      /* Flex items - Children*/
+      li {
+        list-style: none;
+        color: white;
+        background-color: coral;
+        padding: 10px;
+        margin: 20px;
+        width: 100px;
+        font-size: 20px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <ul>
+      <li>1st Child</li>
+      <li>2nd Child</li>
+      <li>3rd Child</li>
+      <li>4th Child</li>
+      <li>5th Child</li>
+    </ul>
+  </body>
+</html>

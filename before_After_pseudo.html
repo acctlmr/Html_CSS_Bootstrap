@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Before Pseudo and after pseudo</title>
+    <style>
+      p::before {
+        content: "😃 Hello";
+        display: block;
+        background-color: burlywood;
+        font-size: 32px;
+        font-weight: bold;
+        color: blue;
+      }
+      p::after {
+        content: "😎 Bye";
+        display: block;
+        font-size: 32px;
+        font-weight: bold;
+        color: red;
+        background-color: rgb(229, 201, 145);
+      }
+    </style>
+  </head>
+  <body>
+    <p>Hi I am learning CSS</p>
+  </body>
+</html>

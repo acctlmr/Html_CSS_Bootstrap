@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flex Wrap Property ( Flex Container property - Parent)</title>
+    <style>
+      ul {
+        background-color: dodgerblue;
+        padding: 20px;
+        display: flex;
+
+        /* Flex wrap property 
+      The flex-wrap property specifies whether the flex items should wrap or not.
+      By default the flex-wrap value is nowrap.
+         
+        */
+        /*flex-wrap: nowrap;
+        The  nowrap value specifies that the flex items will not wrap, this is by default.
+        */
+
+        /* wrap
+        The wrap value specifies that the flex items will wrap if necessary.
+        */
+
+        flex-wrap: wrap;
+
+        /* wrap-reverse
+        
+        The wrap-reverse value specifies that the flexible items will wrap in reverse order if necessary*/
+        flex-wrap: wrap-reverse;
+      }
+      li {
+        list-style: none;
+        background-color: coral;
+        color: white;
+        padding: 10px;
+        margin: 20px;
+        width: 100px;
+        font-size: 20px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <ul>
+      <li>1st Child</li>
+      <li>2nd Child</li>
+      <li>3rd Child</li>
+      <li>4th Child</li>
+      <li>5th Child</li>
+      <li>6th Child</li>
+      <li>7th Child</li>
+      <li>8th Child</li>
+      <li>9th Child</li>
+      <li>10th Child</li>
+      <li>11th Child</li>
+      <li>12th Child</li>
+    </ul>
+  </body>
+</html>

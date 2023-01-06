@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  border: 6px solid rgb(255, 0, 0);
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr minmax(400px, 800px) 1fr;
+  grid-template-rows: repeat(2, 1fr);
+}
+
+.cell {
+  padding: 2rem;
+  background-color: blanchedalmond;
+  font-weight: bold;
+  text-align: center;
+  border: 3px solid green;
+  color: #fff;
+}
+
+.cell-1 {
+  background-color: sienna;
+}
+.cell-2 {
+  background-color: rgb(110, 160, 45);
+}
+.cell-3 {
+  background-color: rgb(8, 115, 255);
+}
+.cell-4 {
+  background-color: rgb(255, 137, 229);
+}
+.cell-5 {
+  background-color: rgb(255, 179, 16);
+}
+.cell-6 {
+  background-color: rgb(7, 129, 13);
+}

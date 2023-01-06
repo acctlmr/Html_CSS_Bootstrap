@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS-Combinators</title>
+    <style>
+      /* h2 + p 
+     {
+        color: violet;
+        background-color: yellow;
+      }*/
+      /*
+      div + p 
+      {
+        background-color: coral;
+        color: white;
+      }*/
+
+      /*
+      div ~ p 
+      {
+        background-color: coral;
+        color: white;
+      }*/
+
+      /*
+      div > p 
+      {
+        background-color: coral;
+        color: white;
+        font-size: 25px;
+      }*/
+
+      div p {
+        background-color: rgb(255, 169, 88);
+        color: white;
+        font-size: 25px;
+      }
+    </style>
+  </head>
+  <body>
+    <!--<h2>Adjacent Sibling Selector</h2>-->
+    <!--
+          This selector is used to select an element that is directly after another specific element.
+          Adjacent - Immediately following
+      -->
+    <!--
+        Example 1
+    <div>
+      <h2>Heading 2 (Part 1)</h2>
+      <p>Paragraph (Part 1)</p>
+      <h2>Heading 2 (Part 2)</h2>
+      <h3>Heading 3</h3>
+      <p>Lorem, ipsum.</p>
+      <h2>Heading 2 (Part 3)</h2>
+      <p>Paragraph (Part 2)</p>
+    </div>
+    -->
+    <!--
+    Example 2
+    <div>
+      <p>Paragraph 1 (inside div)</p>
+      <p>Paragraph 2 (inside div)</p>
+    </div>
+    <p>Paragraph 3 (outside div)</p>
+    <p>Paragraph 4 (outside div)</p>
+    <div>
+      <p>Paragraph 5 (inside div)</p>
+      <p>Paragraph 6 (inside div)</p>
+    </div>
+    <p>Paragraph 7 (outside div)</p>
+    <p>Paragraph 8 (outside div)</p>
+    -->
+    <!--
+    <h2>General Sibling Selector</h2>
+    <!--
+        This selector selects all elements that are next siblings of a specified element.
+    -->
+    <!--
+    <div>
+      <h2>Heading 2 (Part 1)</h2>
+      <p>Paragraph (Part 1)</p>
+      <h2>Heading 2 (Part 2)</h2>
+      <p>Paragraph (Part 2)</p>
+      <h3>Heading 3</h3>
+      <h2>Heading 2 (Part 3)</h2>
+      <p>Paragraph (Part 3)</p>
+    </div>
+    <p>Paragraph (Part 4)</p>
+    <p>Paragraph (Part 5)</p>
+    <h3>Heading 3</h3>
+    <p>Paragraph (Part 6)</p>
+    -->
+    <<!--  <h2>Child Selector</h2>-->
+    <!--
+        This selector selects all elements that are children of a specified element
+    -->
+
+    <!--
+    <div>
+      <p>Paragraph 1 (inside div)</p>
+      <p>Paragraph 2 (inside div)</p>
+      <section>
+        <p>Paragraph 3 (inside section)</p>
+      </section>
+      <p>Pargaraph 4 (inside div)</p>
+    </div>
+
+    <p>Paragraph 5 (ouside div)</p>
+    <p>Paragraph 6 (outside div)</p>
+    -->
+
+    <h2>Descendant Selector</h2>
+    <!--
+        This selector matches all elements that are descendants of a specified element
+    -->
+
+    <div>
+      <p>Paragraph 1 (inside div)</p>
+      <p>Paragraph 2 (inside div)</p>
+      <section>
+        <p>Paragraph 3 (inside section)</p>
+      </section>
+      <p>Pargaraph 4 (inside div)</p>
+    </div>
+
+    <p>Paragraph 5 (ouside div)</p>
+    <p>Paragraph 6 (outside div)</p>
+  </body>
+</html>

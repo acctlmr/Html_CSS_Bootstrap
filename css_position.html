@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Position</title>
+    <style>
+      /*
+      .relative 
+      {
+        position: relative;
+        border: 4px solid red;
+        left: 30px;
+        top: 80px;}
+      */
+
+      div {
+        border: 4px solid red;
+        background-color: cornsilk;
+        margin-top: 40px;
+      }
+      .one {
+        background-color: blue;
+        color: white;
+        position: relative;
+        top: 200px;
+        bottom: 32px;
+        left: 20%;
+        right: 80px;
+      }
+      .two {
+        background: green;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <!--
+      position:relative
+
+      An element with position:relative is positioned relative to its normal position.
+      We can set top, right, bottom,left properties of a relatively positioned element
+      which will cause it to be adjusted away from its normal position
+    -->
+
+    <h2>position:relative</h2>
+
+    <!--
+    <div class="relative">
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+    </div>
+    -->
+
+    <div>
+      <p class="one">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe non
+        aliquid a nam ipsum provident id qui beatae, inventore, perspiciatis
+        asperiores libero. Error aliquam ex earum excepturi ratione laboriosam,
+        nisi labore, voluptates voluptatibus enim a?
+      </p>
+      <p class="two">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni
+        accusamus iste ducimus hic voluptas. Consectetur doloribus cumque
+        architecto commodi reiciendis excepturi quibusdam quas magnam! Deleniti
+        eos quae consectetur, molestiae expedita aperiam perspiciatis provident
+        atque reprehenderit.
+      </p>
+    </div>
+  </body>
+</html>

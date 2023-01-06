@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="login.css" />
+    <title>Login Form</title>
+  </head>
+  <body>
+    <h2>Login Form</h2>
+    <form>
+      <div class="img-container">
+        <img src="profile.png" class="profile-pic" />
+      </div>
+
+      <div class="container">
+        <label for="uname"><strong>Username</strong></label>
+        <input
+          type="text"
+          id="uname"
+          placeholder="Enter your username"
+          required
+        />
+
+        <label for="psw"><strong>Password</strong></label>
+        <input
+          type="password"
+          id="psw"
+          placeholder="Enter your password"
+          required
+        />
+
+        <button type="submit">Login</button>
+
+        <label> <input type="checkbox" checked="checked" />Remember me </label>
+      </div>
+
+      <div class="container" style="background-color: #f1f1f1">
+        <button type="button" class="cancelbtn">Cancel</button>
+        <span class="psw"><a href="#">Forgot Password</a></span>
+      </div>
+    </form>
+  </body>
+</html>

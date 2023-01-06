@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pattern attribute</title>
+  </head>
+  <body>
+    <h2>Pattern attribute</h2>
+    <form>
+      <label for="country_code">Country Code</label>
+      <input type="text" id="country_code" pattern="[A-Za-z]{3}" />
+      <br />
+      <br />
+      <input type="submit" value="Submit" />
+    </form>
+    <br />
+    <br />
+    <form>
+      <label for="mobile_no">Mobile Number</label>
+      <input
+        type="text"
+        id="mobile_no"
+        pattern="[0-9]{10}"
+        maxlength="10"
+        placeholder="Enter 10 digit number"
+      />
+      <br />
+      <br />
+      <input type="submit" value="Submit" />
+    </form>
+    <br />
+    <br />
+    <form>
+      <label for="telno">Telephone Number</label>
+      <input
+        type="text"
+        id="telno"
+        pattern="[0-9]{4}-[0-9]{3}-[0-9]{3}"
+        maxlength="12"
+      />
+      <br />
+      <br />
+      <input type="submit" value="Submit" />
+    </form>
+  </body>
+</html>

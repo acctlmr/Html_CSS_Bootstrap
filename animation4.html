@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>animation fill mode</title>
+    <style>
+      /*
+      .div1 {
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        position: relative;
+        animation-name: animation1;
+        animation-duration: 3s;
+        animation-fill-mode: forwards;
+      }
+
+      @keyframes animation1 {
+        from {
+          top: 0px;
+        }
+        to {
+          top: 200px;
+          background-color: green;
+        }
+      }*/
+
+      .div2 {
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        position: relative;
+        animation-name: animation2;
+        animation-duration: 3s;
+        animation-delay: 2s;
+        animation-fill-mode: backwards;
+      }
+
+      @keyframes animation2 {
+        from {
+          top: 0px;
+          background-color: green;
+        }
+        to {
+          top: 300px;
+          background-color: yellow;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!--
+        animation-fill-mode property specifies  a style for the target element when the animation is not playing.(before it starts,after it ends, or both)
+
+        Different values:
+
+        a) forwards - The element will retain the style values that is set by the last keyframe() the animation direction and iteration count.)
+
+        b) backwards - The element will get style values that is set by the first keyframe. It depends on the animation direction, and retain during the animation-delay period.
+
+        c) both - Follow the rules for both forwards and backwards.
+    -->
+
+    <h1>animation fill mode</h1>
+
+    <div class="div1"></div>
+    <br />
+    <br />
+    <br />
+    <br />
+    <div class="div2"></div>
+  </body>
+</html>

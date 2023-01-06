@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Transition Example 1</title>
+    <style>
+      .a1 {
+        display: inline-block;
+        text-decoration: none;
+        padding: 1rem;
+        background-color: tomato;
+        color: #fff;
+        transition: background-color 2s;
+        transition: background-color 3s, color 5s;
+        transition: all 3s;
+        margin: 12px;
+      }
+      .a1:hover {
+        background-color: rgb(130, 238, 135);
+        color: blue;
+      }
+
+      .a2 {
+        text-decoration: none;
+        display: inline-block;
+        transition: all 3s ease-in-out;
+      }
+      .a2:hover {
+        background-color: teal;
+        color: #fff;
+        border: lawngreen 0.3rem dashed;
+        padding: 2rem;
+        transform: translate(2rem, 4rem);
+      }
+    </style>
+  </head>
+  <body>
+    <a class="a1" href="#">Home</a>
+
+    <br />
+
+    <a class="a2" href="#">Home</a>
+  </body>
+</html>

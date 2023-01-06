@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms in HTML</title>
+  </head>
+  <body>
+    <h2>fieldset and legend</h2>
+
+    <form>
+      <fieldset>
+          <legend>Personal Details</legend>
+        <label for="fname">First Name</label>
+        <input type="text" id="fname"  placeholder="Enter your first name" readonly />
+        <br />
+        <br />
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" value="Sharma" maxlength="10"/>
+        <br />
+        <br />
+        <input type="submit" value="Submit"></input>
+      </fieldset>
+      
+    </form>
+
+
+    <br />
+    <h2>Input type password</h2>
+    <form>
+        <label for="username">Username</label>
+        <input tupe="text" id="username" value="U1003"  disabled>
+        <br />
+        <br />
+        <label for="pwd">Password</label>
+        <input type="password" id="pwd" placeholder="Enter your password">
+        <input type="submit" value="Submit"></input>
+        <input type="reset" value="Ok">
+    </form>
+
+    <br />
+
+    <h2>Input type Radio</h2>
+
+    <form>
+      <input type="radio" id="male" name="gender" value="Male">
+      <label for="male">Male</label>
+      <input type="radio" id="female" name="gender" value="Female">
+      <label for="female">Female</label>
+      <input type="radio" id="others" name="gender" value="Others">
+      <label for="others">Others</label>
+
+    </form>
+
+    <br />
+
+    <h2>Input type Checkbox</h2>
+    <form>
+      <input type="checkbox" id="rice" name="rice" value="Rice">
+    <label for="rice">Rice</label>
+     <input type="checkbox" id="dal" name="dal" value="Dal">
+    <label for="dal">Dal</label>
+     <input type="checkbox" id="milk" name="milk" value="Milk">
+    <label for="milk">Milk</label>
+    <input type="button" value="Click Here"></input>
+
+    </form>
+    <br />
+
+    <h2>Input type Color</h2>
+    <form>
+      <label for="favcolor">Select your favorite color: </label>
+      <input type="color" id="favcolor">
+    </form>
+    <br />
+    <h2>Input type Date</h2>
+    <form>
+      <label for="birthday">Birthday</label>
+    <input type="date" id="birthday">
+    </form>
+
+    <br />
+    <form>
+      <label for="datemax">Enter a date before 2000-01-01: </label>
+      <input type="date" id="datemax" max="1999-12-31"><br /><br />
+      <label for="datemin">Enter a date after 2000-01-01: </label>
+      <input type="date" id="datemin" min="2000-01-02">
+      <br />
+      <label for="birthdaytime">Birthday(date and time)</label>
+      <input type="datetime-local" id="birthdaytime">
+
+    </form>
+    
+    <h2>Input type File</h2>
+    <form>
+      <label for="myfile">Select a file</label>
+    <input type="file" id="myfile">
+    </form>
+
+    <br />
+
+    <h2>Input type month</h2>
+     <form><label for="bdmonth">Select a month</label>
+    <input type="month" id="bdmonth">
+</form>
+
+<br />
+<h2>Input type number</h2>
+     <form><label for="quantity">Quantity (select between 1 and 5)</label>
+    <input type="number" id="quantity" min="1" max="5">
+</form>
+
+<br />
+
+<h2>Input type time</h2>
+     <form><label for="tm">Select a time</label>
+    <input type="time" id="tm">
+</form>
+
+<br />
+
+<h2>Input type week</h2>
+     <form>
+      <label for="week">Select a week</label>
+    <input type="week" id="week">
+</form>
+
+<br />
+
+
+
+    
+  </body>
+</html>

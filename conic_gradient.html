@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Conic Gradient</title>
+    <style>
+      #grad1 {
+        height: 300px;
+        width: 250px;
+        background-image: conic-gradient(red, green, yellow);
+      }
+      #grad2 {
+        height: 350px;
+        width: 320px;
+        background-image: conic-gradient(red, green, yellow, blue, coral);
+      }
+      #grad3 {
+        height: 200px;
+        width: 200px;
+        background-image: conic-gradient(
+          red 45deg,
+          green 90deg,
+          yellow 210deg,
+          blue 35deg
+        );
+      }
+
+      #grad4 {
+        height: 200px;
+        width: 200px;
+        background-image: conic-gradient(red, green, yellow, blue, black);
+        border-radius: 50%;
+      }
+
+      #grad5 {
+        height: 200px;
+        width: 200px;
+        background-image: conic-gradient(
+          red 0deg,
+          red 90deg,
+          yellow 90deg,
+          rgb(255, 255, 216) 180deg,
+          green 180deg,
+          rgb(140, 247, 140) 270deg,
+          rgb(108, 108, 255) 270deg
+        );
+
+        border-radius: 50%;
+      }
+
+      #grad6 {
+        height: 200px;
+        width: 200px;
+        background-image: conic-gradient(from 90deg, fuchsia, green, yellow);
+        border-radius: 50%;
+      }
+      #grad7 {
+        height: 200px;
+        width: 200px;
+        background-image: conic-gradient(at 60% 45%, fuchsia, green, yellow);
+        border-radius: 50%;
+      }
+      #grad8 {
+        width: 200px;
+        height: 200px;
+        background-image: repeating-conic-gradient(
+          green 10%,
+          rgb(255, 240, 32) 30%
+        );
+        border-radius: 50%;
+      }
+      #grad9 {
+        width: 200px;
+        height: 200px;
+        background-image: repeating-conic-gradient(
+          red 0deg 10deg,
+          green 10deg 20deg,
+          blue 20deg 30deg
+        );
+        border-radius: 50%;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Conic Gradient</h1>
+    <div id="grad1"></div>
+    <br />
+    <br />
+    <br />
+    <div id="grad2"></div>
+    <br />
+    <br />
+    <br />
+    <div id="grad3"></div>
+    <br />
+    <br />
+    <br />
+    <div id="grad4"></div>
+    <br />
+    <br />
+    <br />
+    <div id="grad5"></div>
+    <br />
+    <br />
+    <br />
+    <div id="grad6"></div>
+    <br />
+    <br />
+    <br />
+    <div id="grad7"></div>
+    <br />
+    <br />
+    <br />
+    <div id="grad8"></div>
+    <br />
+    <br />
+    <br />
+    <div id="grad9"></div>
+    <br />
+    <br />
+    <br />
+  </body>
+</html>

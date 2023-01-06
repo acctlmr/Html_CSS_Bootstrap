@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Align Self Property ( Flex Items Property - Child)</title>
+    <style>
+      ul {
+        background-color: dodgerblue;
+        padding: 20px;
+        height: 300px;
+
+        display: flex;
+      }
+      li {
+        list-style: none;
+        background-color: coral;
+        color: white;
+        padding: 10px;
+        margin: 20px;
+      }
+      /* Align Self
+      
+      By default the value of the align self property is auto.
+      The align-self property specifies the alignment for the selected item inside the flexible container.
+
+      This property overrides the default alignment set by the container's align-items property.
+      
+      This property aligns according to parent's align-items properties value.
+      */
+      li:first-child {
+        align-self: auto;
+      }
+
+      /*ALign Self - FLex Start */
+      li:nth-child(3) {
+        align-self: flex-start;
+      }
+      /* Align Self - Flex End */
+      li:nth-child(5) {
+        align-self: flex-end;
+      }
+
+      /* Align Self - Center */
+      li:nth-child(4) {
+        align-self: center;
+      }
+      /* Align Self - Stretch*/
+
+      li:nth-child(2) {
+        align-self: stretch;
+      }
+
+      /* Align -Self - baseline */
+      li:nth-child(7) {
+        align-self: baseline;
+      }
+    </style>
+  </head>
+  <body>
+    <ul>
+      <li>1st Child</li>
+      <li>2nd child</li>
+      <li>3rd Child</li>
+      <li>4th Child</li>
+      <li>5th Child</li>
+      <li>6th child</li>
+      <li>7th Child</li>
+      <li>8th Child</li>
+    </ul>
+  </body>
+</html>

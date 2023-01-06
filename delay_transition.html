@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Transition Example</title>
+    <style>
+      .div1 {
+        width: 150px;
+        height: 150px;
+        background-color: green;
+        transition: width 6s;
+        transition-delay: 3s;
+      }
+
+      .div1:hover {
+        width: 450px;
+      }
+
+      .div2 {
+        width: 150px;
+        height: 150px;
+        background-color: coral;
+        transition: width 2s, height 3s, transform 3s;
+        transition: all 3s;
+      }
+      .div2:hover {
+        width: 300px;
+        height: 300px;
+        transform: rotate(180deg);
+      }
+      .div3 {
+        width: 200px;
+        height: 200px;
+        background-color: lightblue;
+        transition-property: width;
+        transition-duration: 3s;
+        transition-timing-function: linear;
+        transition-delay: 3s;
+        transition: width 3s linear 3s;
+      }
+      .div3:hover {
+        width: 500px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Transition delay</h1>
+
+    <div class="div1"></div>
+
+    <br />
+    <br />
+
+    <h1>Transition+Transformation</h1>
+
+    <div class="div2"></div>
+
+    <br />
+    <br />
+
+    <h2>Shorthand Property</h2>
+    <div class="div3"></div>
+  </body>
+</html>

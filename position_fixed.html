@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>position:fixed</title>
+    <style>
+      /*
+      .fixed {
+        position: fixed;
+        border: 4px solid green;
+        bottom: 0;
+        right: 0;
+        width: 300px;
+      }*/
+      .nav {
+        background-color: fuchsia;
+        color: white;
+        font-size: 48px;
+        position: fixed;
+        margin-top: 0;
+        top: 0;
+        left: 0;
+        width: 100%;
+      }
+      div {
+        border: 3px solid red;
+        background-color: blanchedalmond;
+        margin-top: 40px;
+      }
+      .container {
+        background-color: blue;
+        min-height: 100vh;
+      }
+    </style>
+  </head>
+  <body>
+    <!--
+          position:fixed
+
+          An element with position fixed always stays in the same place even if the page is scrolled.
+          top,right,bottom,left peoperties are used to position the element.
+      -->
+
+    <h2>position:fixed</h2>
+
+    <div class="nav">NavBar</div>
+
+    <div>
+      <p class="one">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
+        dolore commodi earum sint vitae iure provident doloremque culpa
+        accusantium sunt amet, est dicta voluptatem, fugit quam quis deserunt,
+        sapiente esse. Nobis accusamus reiciendis quae cupiditate fugiat magni
+        voluptatibus ut sint, dolorum excepturi? Reprehenderit, excepturi minus?
+      </p>
+      <p class="two">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
+        dolore commodi earum sint vitae iure provident doloremque culpa
+        accusantium sunt amet, est dicta voluptatem, fugit quam quis deserunt,
+        sapiente esse. Nobis accusamus reiciendis quae cupiditate fugiat magni
+        voluptatibus ut sint, dolorum excepturi? Reprehenderit, excepturi minus?
+      </p>
+    </div>
+
+    <div class="container"></div>
+  </body>
+</html>

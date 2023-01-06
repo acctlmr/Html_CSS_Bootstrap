@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Color keywords</title>
+    <style>
+      :root {
+        --lightblue: #647ae0;
+        --lorange: #f2be50;
+        --darkgreen: #097317;
+        --lpink: #f792ff;
+        --lred: #f56c40;
+      }
+      .container {
+        background-color: floralwhite;
+        color: var(--lightblue);
+        padding: 15px;
+        border: 2px solid currentColor;
+      }
+      button {
+        background-color: var(--lred);
+        color: white;
+        padding: 12px;
+        border: none;
+      }
+    </style>
+  </head>
+  <body>
+    <!--
+        currentcolor  is like a varible that holds the current value of the color proeprty of an element.
+    -->
+    <div class="container">
+      <h2>Lorem, ipsum.</h2>
+
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos
+        rem saepe, laudantium iusto facilis, dolorem quos similique eos maiores,
+        velit vel suscipit inventore neque pariatur?
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima quam
+        nostrum pariatur debitis incidunt corporis nihil aspernatur deleniti
+        nobis doloribus, sapiente inventore quas fuga et!
+      </p>
+      <p>
+        <button>Yes</button>
+        <button>No</button>
+      </p>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Regsitration Form</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        background-color: rgb(255, 235, 208);
+      }
+
+      .container {
+        padding: 16px;
+        background-color: rgb(228, 247, 199);
+        max-width: 800px;
+        margin: auto;
+      }
+
+      input[type="text"],
+      input[type="password"] {
+        width: 100%;
+        padding: 16px;
+        margin: 5px 0 21px 0;
+        border: none;
+        background-color: #f1f1f1;
+      }
+      input[type="text"]:focus,
+      input[type="password"]:focus {
+        background-color: rgb(198, 240, 226);
+      }
+
+      .registerbtn {
+        background-color: dodgerblue;
+        color: white;
+        padding: 16px 21px;
+        border: none;
+        font-size: 18px;
+        margin: 9px 0;
+        cursor: pointer;
+        width: 100%;
+        opacity: 0.8;
+      }
+      .registerbtn:hover {
+        opacity: 1;
+      }
+      .signin {
+        background-color: rgb(0, 0, 0);
+        color: white;
+        font-size: 19px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <form>
+      <div class="container">
+        <h1 style="text-align: center; font-size: 35px">Register</h1>
+        <p style="font-size: 28px">
+          Please fill this form to create an account.
+        </p>
+
+        <hr />
+
+        <label for="email"><strong>Email</strong></label>
+        <input
+          type="text"
+          placeholder="Enter your email address"
+          id="email"
+          required
+        />
+
+        <label for="pswd"><strong>Password</strong></label>
+        <input
+          type="password"
+          placeholder="Enter your password"
+          id="pswd"
+          required
+        />
+
+        <label for="pswdrepeat"><strong>Repeat Password</strong></label>
+        <input
+          type="password"
+          id="pswdrepeat"
+          placeholder="Enter your password again"
+          required
+        />
+
+        <hr />
+
+        <p>
+          By creating an account you agree to our
+          <a href="#">Terms & Privacy</a>
+        </p>
+
+        <button type="submit" class="registerbtn">Register</button>
+      </div>
+
+      <div class="container signin">
+        <p>Already have an account?<a href="#">Sign In</a></p>
+      </div>
+    </form>
+  </body>
+</html>

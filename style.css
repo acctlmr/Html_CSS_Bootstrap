@@ -1,0 +1,17 @@
+h2 {
+  color: dodgerblue;
+  font-size: 35px;
+  background-color: khaki;
+}
+
+h1 {
+  color: red;
+  font-size: 40px;
+  background-color: lightgrey;
+}
+
+p {
+  background-color: floralwhite;
+  color: indigo;
+  font-size: 25px;
+}

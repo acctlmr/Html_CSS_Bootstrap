@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Transition Timing Property</title>
+    <style>
+      div {
+        width: 100px;
+        height: 100px;
+        background-color: fuchsia;
+        transition: width 4s;
+      }
+      .linear {
+        transition-timing-function: linear;
+      }
+      .ease {
+        transition-timing-function: ease;
+      }
+      .ease-in {
+        transition-timing-function: ease-in;
+      }
+      .ease-out {
+        transition-timing-function: ease-out;
+      }
+      .ease-in-out {
+        transition-timing-function: ease-in-out;
+      }
+      div:hover {
+        width: 350px;
+      }
+    </style>
+  </head>
+  <body>
+    <!--
+        Transition timing function specifies the speed cureve of the transition. 
+        a) ease - start slowly, then fast, then end slowly. 
+        b) linear - same speed form start to end. 
+        c) ease-in - start slowly.
+        d) ease-out - slow end. 
+        e) ease-in-out - slow start and end.
+    -->
+
+    <h1>transition timing function</h1>
+
+    <div class="linear">linear</div>
+    <br />
+    <div class="ease">ease</div>
+    <br />
+    <div class="ease-in">ease-in</div>
+    <br />
+    <div class="ease-out">ease-out</div>
+    <br />
+    <div class="ease-in-out">ease-in-out</div>
+  </body>
+</html>

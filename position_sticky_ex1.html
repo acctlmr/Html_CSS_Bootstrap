@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Position: sticky</title>
+    <style>
+      /*
+      .sticky{
+        position: sticky;
+        top: 0px;
+        padding: 5px;
+        background-color: rgb(214, 210, 203);
+        color: rgb(255, 0, 0);
+        border: 4px solid blue;
+      }*/
+      .nav {
+        background-color: red;
+        color: white;
+        font-size: 40px;
+        position: sticky;
+        top: 0;
+      }
+      div {
+        border: 3px solid red;
+        background-color: burlywood;
+        margin-top: 40px;
+      }
+      .one {
+        background-color: blue;
+        color: white;
+      }
+      .two {
+        background-color: green;
+        color: white;
+      }
+      .container {
+        min-height: 100vh;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Position:sticky</h2>
+    <!--
+        An element with position sticky is positioned based on the user's scroll position.
+    -->
+    <div>
+      <p class="one">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil eligendi
+        obcaecati veniam sit, velit voluptates praesentium quasi impedit minus a
+        asperiores iste blanditiis quas illo reiciendis temporibus nostrum
+        quidem, accusamus ullam ipsam nesciunt quo Lorem ipsum dolor sit, amet
+        consectetur adipisicing elit. Ullam, id aut neque eum eligendi aperiam
+        expedita laudantium necessitatibus harum. Obcaecati sit, velit
+        voluptates, at voluptate fugiat voluptatibus id eum possimus laudantium
+        consequuntur nobis vel accusamus.
+      </p>
+      <p class="two">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil eligendi
+        obcaecati veniam sit, velit voluptates praesentium quasi impedit minus a
+        asperiores iste blanditiis quas illo reiciendis temporibus nostrum
+        quidem, accusamus ullam ipsam nesciunt quo eius.uidem, accusamus ullam
+        ipsam nesciunt quo Lorem ipsum dolor sit, amet consectetur adipisicing
+        elit. Ullam, id aut neque eum eligendi aperiam expedita laudantium
+        necessitatibus harum. Obcaecati sit, velit voluptates, at voluptate
+        fugiat voluptatibus id eum possimus laudantium consequuntur nobis vel
+        accusamus.
+      </p>
+    </div>
+
+    <div class="nav">NavBar</div>
+    <div class="container"></div>
+
+    <!--
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae sed
+      possimus ducimus eos minima voluptas facilis debitis eius porro maiores
+      mollitia, obcaecati ipsa tenetur quis pariatur perferendis accusamus nisi
+      dolorum similique optio numquam. Dolorum, vero?
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur numquam
+      consectetur cupiditate quos minima dicta explicabo cumque. Dolore
+      accusantium ratione ullam facere doloribus deleniti harum a tenetur
+      facilis quo itaque saepe, eveniet hic autem fugiat quae iure assumenda, et
+      labore, repellat est repellendus? Quo, nobis!
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur numquam
+      consectetur cupiditate quos minima dicta explicabo cumque. Dolore
+      accusantium ratione ullam facere doloribus deleniti harum a tenetur
+      facilis quo itaque saepe, eveniet hic autem fugiat quae iure assumenda, et
+      labore, repellat est repellendus? Quo, nobis!
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur numquam
+      consectetur cupiditate quos minima dicta explicabo cumque. Dolore
+      accusantium ratione ullam facere doloribus deleniti harum a tenetur
+      facilis quo itaque saepe, eveniet hic autem fugiat quae iure assumenda, et
+      labore, repellat est repellendus? Quo, nobis!
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur numquam
+      consectetur cupiditate quos minima dicta explicabo cumque. Dolore
+      accusantium ratione ullam facere doloribus deleniti harum a tenetur
+      facilis quo itaque saepe, eveniet hic autem fugiat quae iure assumenda, et
+      labore, repellat est repellendus? Quo, nobis!
+    </p>
+    <div class="sticky">Sticky</div>
+
+    <div style="padding-bottom: 2000px">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur numquam
+        consectetur cupiditate quos minima dicta explicabo cumque. Dolore
+        accusantium ratione ullam facere doloribus deleniti harum a tenetur
+        facilis quo itaque saepe, eveniet hic autem fugiat quae iure assumenda,
+        et labore, repellat est repellendus? Quo, nobis!
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis ipsa
+        maiores provident ipsam at aut vero fugiat perferendis eos accusantium
+        repellat sit neque quas veniam reprehenderit fuga cum, tenetur incidunt
+        deleniti eius necessitatibus quidem porro sint. In placeat animi
+        accusantium voluptatem molestias officiis beatae odit natus nihil quam
+        cum enim culpa accusamus aut iure eos dolorem, illum tempora omnis
+        harum. Ex doloribus alias eos, impedit ullam animi veritatis amet
+        nesciunt explicabo sit libero reiciendis repellendus accusamus.
+        Consectetur molestias fugit reiciendis quidem! Eius error voluptate
+        earum necessitatibus rerum ab quae at? Culpa consequuntur ratione
+        repellat cumque voluptatibus cum dicta provident at fuga ut sequi,
+        quidem alias aut officia accusantium consectetur. Laudantium, porro
+        ullam impedit in magnam odit assumenda rerum exercitationem libero hic,
+        sequi inventore esse unde iure nulla? Obcaecati, sequi culpa. Molestiae
+        minima officiis perspiciatis, nisi incidunt iste eaque officia rerum
+        reiciendis obcaecati, adipisci voluptate quis debitis rem ducimus, ipsa
+        accusamus quas dicta! Non magni odio dicta ipsam exercitationem, libero
+        soluta asperiores illum sunt culpa debitis corporis laboriosam? Dolor
+        voluptatum, quasi consectetur sequi ut voluptates labore obcaecati quis
+        tempora quisquam commodi blanditiis atque sunt modi dolorem provident,
+        consequuntur eum accusamus impedit exercitationem nisi ipsum ab
+        inventore. Dolor reiciendis, voluptas totam repudiandae nihil dolorum
+        ullam nulla molestias quisquam neque repellendus, laborum tenetur quas
+        velit maiores harum? Doloribus nemo ex beatae quidem saepe amet ipsa
+        blanditiis? Voluptatibus, voluptatem vel deleniti qui at atque facere
+        dignissimos consectetur eligendi dolorem hic officia nulla natus id
+        repudiandae quas. Exercitationem officia quae in velit quos architecto
+        nulla facilis, beatae commodi eos illum culpa perspiciatis quo quaerat
+        natus esse rerum? Maiores cupiditate eos quisquam eaque! Saepe delectus
+        excepturi obcaecati id fugiat assumenda! Amet, aliquam placeat nostrum
+        eaque molestias est nisi similique, eius voluptatum iste nemo ea rem
+        magnam. Quisquam, nemo deleniti dolores provident repudiandae a vel
+        illum saepe.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Error adipisci
+        odio soluta vitae incidunt enim nostrum. Tempore, accusamus. Illum
+        obcaecati non voluptatum alias autem odit nam tenetur id consectetur
+        dolores adipisci quae, rerum animi necessitatibus perspiciatis
+        aspernatur ipsum iure ab veniam? Atque odio, repudiandae, beatae quod
+        velit mollitia commodi reiciendis, possimus culpa accusamus asperiores
+        aperiam laudantium tenetur voluptatem vero. Cupiditate quasi ullam eos
+        dolor odit repudiandae maxime incidunt commodi deserunt labore
+        dignissimos tempore itaque accusamus earum explicabo numquam ducimus
+        officia nisi, dicta suscipit hic eveniet quaerat natus. Itaque eum optio
+        nisi velit in, laboriosam ratione, neque impedit facere natus mollitia,
+        consequatur aliquid voluptatibus quam ab delectus ipsum enim odit libero
+        dolorum! Mollitia quis architecto eveniet doloribus eum harum pariatur
+        iure asperiores nulla sint delectus vitae dicta ut quisquam suscipit
+        saepe adipisci, esse sed eos natus corporis. Quo, architecto? Dolorem,
+        pariatur assumenda mollitia reprehenderit dignissimos, impedit non
+        voluptatum rem laborum nostrum quaerat rerum fugiat blanditiis eaque.
+        Quasi possimus nulla velit blanditiis aperiam optio laudantium fugit
+        est? Amet itaque ducimus veritatis autem, earum eaque ea voluptatum non
+        voluptates. Adipisci fugit in et, modi accusantium optio expedita totam,
+        praesentium dolore dicta libero quos accusamus? Accusantium fugit sed
+        reiciendis aspernatur quisquam dolor eaque! Nihil veniam unde
+        accusantium quos explicabo dolores blanditiis libero minima vel
+        aspernatur, suscipit ipsum iure iusto dolore nesciunt laborum mollitia
+        commodi excepturi, illum ea, quibusdam vitae ut. Accusamus dignissimos
+        iure eius modi, nulla, blanditiis ratione voluptates veritatis nam
+        impedit corporis inventore quod ab aliquam quasi explicabo? Accusamus
+        hic sequi ex at ullam recusandae itaque harum. Porro atque commodi
+        distinctio quo cum quam ad odit expedita molestiae, minus earum
+        architecto velit, maiores nam ab repudiandae. Veritatis tenetur nesciunt
+        eligendi beatae reprehenderit vel harum vero iste soluta, officiis enim
+        pariatur quos earum quisquam eaque. Tenetur soluta hic omnis accusantium
+        sequi, fuga molestias consequatur!
+      </p>
+    </div>
+    -->
+  </body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>first-child (pseudo class)</title>
+    <style>
+      p:first-child {
+        color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <!--
+        This first-child pseudo class macthes a specified element that is the first child of another element
+    -->
+
+    <p>Lorem ipsum dolor sit amet.</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+
+    <div>
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora,
+        architecto.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem
+        provident ipsa quisquam.
+      </p>
+    </div>
+
+    <div>
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora,
+        architecto.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem
+        provident ipsa quisquam.
+      </p>
+    </div>
+  </body>
+</html>

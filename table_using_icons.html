@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Table using icons</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+      integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <style>
+      table {
+        border: 2px solid green;
+        width: 100%;
+        border-collapse: collapse;
+        border-spacing: 0;
+
+        font-size: 24px;
+      }
+      th,
+      td {
+        text-align: left;
+        padding: 16px;
+      }
+      .fa-check {
+        color: green;
+      }
+      .fa-trash {
+        color: red;
+      }
+      tr:nth-child(even) {
+        background-color: blanchedalmond;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Table using Icons</h2>
+    <table>
+      <tr>
+        <th>Features</th>
+        <th>Basic</th>
+        <th>Pro</th>
+      </tr>
+
+      <tr>
+        <td>Lorem, ipsum.</td>
+        <td>
+          <i class="fa fa-check"></i>
+        </td>
+        <td>
+          <i class="fa fa-trash"></i>
+        </td>
+      </tr>
+      <tr>
+        <td>Lorem, ipsum.</td>
+        <td>
+          <i class="fa fa-trash"></i>
+        </td>
+        <td>
+          <i class="fa fa-check"></i>
+        </td>
+      </tr>
+      <tr>
+        <td>Lorem, ipsum.</td>
+        <td>
+          <i class="fa fa-check"></i>
+        </td>
+        <td>
+          <i class="fa fa-check"></i>
+        </td>
+      </tr>
+      <tr>
+        <td>Lorem, ipsum.</td>
+        <td>
+          <i class="fa fa-check"></i>
+        </td>
+        <td>
+          <i class="fa fa-trash"></i>
+        </td>
+      </tr>
+      <tr>
+        <td>Lorem, ipsum.</td>
+        <td>
+          <i class="fa fa-trash"></i>
+        </td>
+        <td>
+          <i class="fa fa-check"></i>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>

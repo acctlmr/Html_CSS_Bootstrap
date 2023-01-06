@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Media Queries 5 Example</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      .column {
+        width: 25%;
+        padding: 20px;
+        float: left;
+      }
+
+      @media screen and (max-width: 900px) {
+        .column {
+          width: 50%;
+        }
+      }
+
+      @media screen and (max-width: 600px) {
+        .column {
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="row">
+      <div class="column" style="background-color: lightgreen">
+        <h2>Column 1</h2>
+        <p>Lorem, ipsum dolor.</p>
+      </div>
+
+      <div class="column" style="background-color: aquamarine">
+        <h2>Column 2</h2>
+        <p>Lorem, ipsum dolor.</p>
+      </div>
+
+      <div class="column" style="background-color: violet">
+        <h2>Column 3</h2>
+        <p>Lorem, ipsum dolor.</p>
+      </div>
+
+      <div class="column" style="background-color: yellow">
+        <h2>Column 4</h2>
+        <p>Lorem, ipsum dolor.</p>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Marker pseudo element</title>
+    <style>
+      body {
+        font-size: 32px;
+      }
+      ::marker {
+        color: blue;
+      }
+      .ul1::marker {
+        color: green;
+      }
+      .ul2::marker {
+        color: rgb(245, 255, 106);
+      }
+      .ul3::marker {
+        color: rgb(109, 130, 221);
+      }
+      .ul4::marker {
+        color: rgb(255, 183, 89);
+      }
+      .ul5::marker {
+        color: rgb(212, 103, 96);
+      }
+      .ol1::marker {
+        color: fuchsia;
+      }
+      .ol2::marker {
+        color: rgb(145, 252, 216);
+      }
+      .ol3::marker {
+        color: rgb(75, 234, 255);
+      }
+      .ol4::marker {
+        color: rgb(230, 255, 89);
+      }
+      .ol5::marker {
+        color: rgb(255, 22, 119);
+      }
+    </style>
+  </head>
+  <body>
+    <h2>::marker pseudo element</h2>
+
+    <!--This pseudo element selects the markers of list items-->
+
+    <ul>
+      <li class="ul1">Apple</li>
+      <li class="ul2">Orange</li>
+      <li class="ul3">Pineapple</li>
+      <li class="ul4">Blueberries</li>
+      <li class="ul5">Grapes</li>
+    </ul>
+
+    <br />
+    <br />
+    <ol>
+      <li class="ol1">Potato</li>
+      <li class="ol2">Ginger</li>
+      <li class="ol3">Onion</li>
+      <li class="ol4">Cabbage</li>
+      <li class="ol5">Cauliflower</li>
+    </ol>
+  </body>
+</html>

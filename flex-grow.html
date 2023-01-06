@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flex Grow property (Flex items property - Child)</title>
+    <style>
+      ul {
+        background-color: dodgerblue;
+        padding: 20px;
+
+        display: flex;
+      }
+      li {
+        list-style: none;
+        background-color: coral;
+        color: white;
+        padding: 10px;
+        margin: 20px;
+      }
+
+      /* Flex Grow 
+      
+      The flex-grow property specifies how much a flex item will grow relative to the rest of the flex items.
+      
+      */
+      /* Be default flex-grow property is 0*/
+      li:first-child {
+        flex-grow: 1;
+      }
+      li:nth-child(3) {
+        flex-grow: 3;
+      }
+    </style>
+  </head>
+  <body>
+    <ul>
+      <li>1st Child</li>
+      <li>2nd child</li>
+      <li>3rd Child</li>
+      <li>4th Child</li>
+    </ul>
+  </body>
+</html>

@@ -1,0 +1,71 @@
+.grid-container {
+  background-color: #ff7052;
+  /* Initializing a grid layout*/
+  display: grid;
+  grid-gap: 25px;
+  /* Grid template areas:
+Named grid items can be referred by the grid-template-areas property of the grid container.
+
+*/
+  grid-template-areas:
+    "header header header header header header"
+    "sec-1 sec-1 sec-2 sec-2 sec-3 sec-3"
+    ". sec-4 sec-4 sec-4 sec-4 ."
+    "sec-5 sec-5 sec-5 sec-6 sec-6 sec-6"
+    "footer footer footer footer footer footer";
+}
+
+/* Grid items */
+
+section,
+header,
+footer {
+  background-color: #fcc006;
+  font-size: 20px;
+  text-align: center;
+  line-height: 150px;
+  letter-spacing: 3px;
+}
+
+/* Grid-area:
+The grid-area property can also be used to assign names to grid items.
+
+*/
+.header {
+  background-color: blueviolet;
+  grid-area: header;
+}
+
+.item1 {
+  background-color: rgb(43, 226, 186);
+  grid-area: sec-1;
+}
+
+.item2 {
+  background-color: rgb(221, 250, 90);
+  grid-area: sec-2;
+}
+
+.item3 {
+  background-color: rgb(226, 43, 165);
+  grid-area: sec-3;
+}
+
+.item4 {
+  background-color: rgb(255, 172, 17);
+  grid-area: sec-4;
+}
+
+.item5 {
+  background-color: rgb(226, 43, 119);
+  grid-area: sec-5;
+}
+.item6 {
+  background-color: rgb(237, 198, 255);
+  grid-area: sec-6;
+}
+
+.footer {
+  background-color: rgb(159, 235, 203);
+  grid-area: footer;
+}

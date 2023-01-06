@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Border in CSS</title>
+    <style>
+      .dotted {
+        border-style: dotted;
+        border-width: 8px;
+        border-color: fuchsia;
+      }
+      .dashed {
+        border-style: dashed;
+        border-width: 3px;
+        border-color: rgb(98, 185, 124);
+      }
+      .solid {
+        border-style: solid;
+        border-width: 5px;
+        border-color: rgb(231, 243, 61);
+      }
+      .double {
+        border-style: double;
+        border-width: 10px;
+        border-color: rgb(187, 110, 37);
+      }
+      .groove {
+        border-style: groove;
+        border-width: 15px;
+        border-color: rgb(125, 181, 218);
+      }
+      .ridge {
+        border-style: ridge;
+        border-width: 2px;
+        border-color: rgb(0, 204, 255);
+      }
+      .inset {
+        /*
+        border-style: inset;
+        border-width: 6px;
+        border-color: rgb(94, 255, 0);
+        */
+        border: inset 6px rgb(94, 255, 0);
+      }
+      .outset {
+        /*
+        border-style: outset;
+        border-width: 12px;
+        border-color: rgb(255, 94, 0);
+        */
+        border: 12px outset rgb(255, 94, 0);
+      }
+      .border-side {
+        /*
+        border-top-style: dotted;
+        border-right-style: dashed;
+        border-bottom-style: groove;
+        border-left-style: solid;
+        */
+        border-style: dotted dashed groove solid;
+      }
+    </style>
+  </head>
+  <body>
+    <!--Border provides us to specify the width, style and color-->
+    <!--Style in border
+      Dotted,Dashed,solid,double,groove,ridge,inset,outset
+    -->
+    <h2>Style property in border</h2>
+
+    <p class="dotted">Dotted</p>
+    <p class="dashed">Dashed</p>
+    <p class="solid">Solid</p>
+    <p class="double">Double</p>
+    <p class="groove">Groove</p>
+    <p class="ridge">Ridge</p>
+    <p class="inset">Inset</p>
+    <p class="outset">Outset</p>
+    <p class="border-side">Lorem, ipsum.</p>
+  </body>
+</html>

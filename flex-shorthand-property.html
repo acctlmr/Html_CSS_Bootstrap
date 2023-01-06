@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flex Shorthand Property</title>
+    <style>
+      ul {
+        background-color: dodgerblue;
+        padding: 20px;
+
+        display: flex;
+      }
+      li {
+        list-style: none;
+        background-color: coral;
+        color: white;
+        padding: 10px;
+        margin: 20px;
+      }
+      /* Flex shorthand property*/
+      /* Flex Shorthand (flex-grow flex-shrink flex-basis) 
+      
+      The flex property is a shorthand property for the flex-grow, flex-shrink and flex-basis property.
+      
+      */
+
+      li:nth-child(3) {
+        flex: 0 1 21rem;
+      }
+    </style>
+  </head>
+  <body>
+    <ul>
+      <li>1st Child</li>
+      <li>2nd child</li>
+      <li>3rd Child</li>
+      <li>4th Child</li>
+      <li>5th Child</li>
+      <li>6th child</li>
+      <li>7th Child</li>
+      <li>8th Child</li>
+    </ul>
+  </body>
+</html>
